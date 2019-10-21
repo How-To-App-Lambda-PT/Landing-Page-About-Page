@@ -1,7 +1,5 @@
 nav {
-  .displayFlex(center, center);
-
-  .solid;
+  .displayFlex(space-between, center);
   left: 0%;
   right: 0%;
   top: 7.84%;
@@ -9,22 +7,15 @@ nav {
   background: #346f2f;
 
   h1 {
-    left: 5.14%;
-    right: 89.65%;
-    top: 0%;
-    bottom: 0%;
+    margin-left: 5%;
     font-family: Zhi Mang Xing;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 141.2%;
     /* identical to box height, or 51px */
     letter-spacing: 0.01em;
     color: #cf9540;
-  }
-
-  a {
-    .solid;
   }
 
   .input-icon {
@@ -34,7 +25,9 @@ nav {
     top: calc(
       50% - 0.5em
     ); /* Keep icon in center of input, regardless of the input height */
+    margin-left: 200%;
   }
+
   input {
     font-size: 20px;
     padding: 8px;
@@ -43,8 +36,28 @@ nav {
     box-sizing: border-box;
     border-radius: 4px;
     width: 150%;
+    margin-left: 200%;
   }
+
   .input-wrapper {
     position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 141.2%;
+    /* or 20px */
+    letter-spacing: 0.01em;
+  }
+
+  .nav-link {
+    width: 15%;
+    .displayFlex(space-around, center);
+    
   }
 }
