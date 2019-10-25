@@ -9,6 +9,8 @@
     background-image: url("../images/mobilebg.jpg");
     // background: black;
     max-width: 100%;
+    width: 99%;
+    margin: auto;
     height: 564px;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -181,6 +183,13 @@
 .second-section {
   .displayFlex(space-around, center);
 
+  @media @tablet {
+    margin: auto;
+    max-width: 90%;
+    width: 100%;
+    flex-direction: column;
+  }
+
   .about-how-to {
     width: 812px;
     height: 100%;
@@ -196,6 +205,10 @@
     line-height: 21px;
 
     color: #000000;
+
+    @media @tablet {
+      max-width: 90%;
+    }
   }
 
   .create {
@@ -205,6 +218,10 @@
     height: 219px;
     width: 25%;
     margin-bottom: 5%;
+
+    @media @tablet {
+      width: 50%;
+    }
 
     .text {
       font-family: Roboto;
@@ -265,6 +282,12 @@
   top: 966px;
   background: #e3c291;
 
+  @media @tablet {
+    max-width: 100%;
+    width: 99%;
+    margin: auto;
+  }
+
   h2 {
     margin-right: 950px;
     margin-top: -45px;
@@ -275,11 +298,21 @@
     font-size: 24px;
     line-height: 28px;
     border-bottom: 1px solid #193617;
+
+    @media @tablet {
+      margin-left: 600px;
+      margin-top: -30px;
+    }
   }
 
   .rate-box {
     .displayFlex(space-evenly, center);
     width: 100%;
+
+    @media @tablet {
+      height: 80%;
+      margin-bottom: -40px;
+    }
   }
 
   .rate {
@@ -288,6 +321,12 @@
     align-content: space-around;
     height: 50%;
     width: 33%;
+
+    @media @tablet {
+      height: 100%;
+      display: flex;
+      align-content: space-between;
+    }
 
     p {
       text-align: center;
@@ -304,6 +343,12 @@
       line-height: 28px;
 
       color: #193617;
+
+      @media @tablet {
+        font-size: 20px;
+        width: 100%;
+        margin-top: -30px;
+      }
     }
 
     i {
@@ -321,6 +366,13 @@
   height: 200px;
   margin-bottom: 25px;
 
+  @media @tablet {
+    width: 99%;
+    margin: auto;
+    height: 33%;
+    margin-top: 40px;
+  }
+
   h2 {
     width: 403px;
     height: 28px;
@@ -335,6 +387,11 @@
     line-height: 28px;
 
     color: #000000;
+
+    @media @tablet {
+      margin-left: 600px;
+      margin-top: -30px;
+    }
   }
 
   .user-review {
@@ -372,6 +429,13 @@
 .plan {
   .displayFlex(space-around, center);
   margin: 30px;
+
+  @media @tablet {
+    max-width: 100%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   h3 {
     width: 150px;
