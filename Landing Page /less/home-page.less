@@ -3,6 +3,19 @@
   background-image: url("../images/Rectangle\ 5.jpg");
   height: 643px;
 
+  @media @tablet {
+    .displayFlex(space-around, space-evenly);
+    flex-direction: column;
+    background-image: url("../images/mobilebg.jpg");
+    // background: black;
+    max-width: 100%;
+    width: 99%;
+    margin: auto;
+    height: 564px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
   .hack {
     .displayFlex(center, center);
     position: absolute;
@@ -16,6 +29,13 @@
       rgba(255, 255, 255, 0.2) 0%,
       rgba(126, 124, 124, 0) 100%
     );
+
+    @media @tablet {
+      top: 0px;
+      left: 0%;
+      position: static;
+      background-image: none;
+    }
 
     p {
       width: 450px;
@@ -31,6 +51,19 @@
       text-align: center;
 
       color: @drkgreen;
+
+      @media @tablet {
+        position: absolute;
+        font-size: 36px;
+        width: 45%;
+        font-weight: 900;
+        line-height: 141.2%;
+        /* or 25px */
+        text-align: center;
+        letter-spacing: 0.01em;
+        margin-top: -90px;
+        margin-left: -70px;
+      }
     }
   }
 
@@ -46,7 +79,15 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 
-    p {
+    @media @tablet {
+      margin-top: 100px;
+      height: 60px;
+      width: 180px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .get-started {
       left: 26.05%;
       right: 24.14%;
       top: 37.78%;
@@ -60,6 +101,31 @@
       text-align: center;
 
       color: #ffffff;
+
+      @media @tablet {
+        display: none;
+      }
+    }
+
+    .mobile-join {
+      display: none;
+
+      @media @tablet {
+        display: inline;
+        left: 26.05%;
+        right: 24.14%;
+        top: 37.78%;
+        bottom: 31.11%;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+
+        color: #ffffff;
+      }
     }
   }
 
@@ -77,7 +143,15 @@
       rgba(126, 124, 124, 0) 100%
     );
 
+    @media @tablet {
+      position: static;
+      width: 100%;
+      height: 33%;
+      background-image: none;
+    }
+
     p {
+      position: static;
       width: 574px;
       height: 112px;
       left: 789px;
@@ -90,13 +164,31 @@
       line-height: 56px;
       text-align: center;
 
-      color: @drkgreen;
+      color: @green;
+
+      @media @tablet {
+        font-size: 36px;
+        width: 40%;
+        font-weight: 900;
+        line-height: 141.2%;
+        /* or 25px */
+        text-align: center;
+        letter-spacing: 0.01em;
+        margin-left: 500px;
+      }
     }
   }
 }
 
 .second-section {
   .displayFlex(space-around, center);
+
+  @media @tablet {
+    margin: auto;
+    max-width: 90%;
+    width: 100%;
+    flex-direction: column;
+  }
 
   .about-how-to {
     width: 812px;
@@ -113,6 +205,10 @@
     line-height: 21px;
 
     color: #000000;
+
+    @media @tablet {
+      max-width: 90%;
+    }
   }
 
   .create {
@@ -122,6 +218,10 @@
     height: 219px;
     width: 25%;
     margin-bottom: 5%;
+
+    @media @tablet {
+      width: 50%;
+    }
 
     .text {
       font-family: Roboto;
@@ -182,6 +282,12 @@
   top: 966px;
   background: #e3c291;
 
+  @media @tablet {
+    max-width: 100%;
+    width: 99%;
+    margin: auto;
+  }
+
   h2 {
     margin-right: 950px;
     margin-top: -45px;
@@ -192,11 +298,21 @@
     font-size: 24px;
     line-height: 28px;
     border-bottom: 1px solid #193617;
+
+    @media @tablet {
+      margin-left: 600px;
+      margin-top: -30px;
+    }
   }
 
   .rate-box {
     .displayFlex(space-evenly, center);
     width: 100%;
+
+    @media @tablet {
+      height: 80%;
+      margin-bottom: -40px;
+    }
   }
 
   .rate {
@@ -205,6 +321,12 @@
     align-content: space-around;
     height: 50%;
     width: 33%;
+
+    @media @tablet {
+      height: 100%;
+      display: flex;
+      align-content: space-between;
+    }
 
     p {
       text-align: center;
@@ -221,6 +343,12 @@
       line-height: 28px;
 
       color: #193617;
+
+      @media @tablet {
+        font-size: 20px;
+        width: 100%;
+        margin-top: -30px;
+      }
     }
 
     i {
@@ -238,6 +366,13 @@
   height: 200px;
   margin-bottom: 25px;
 
+  @media @tablet {
+    width: 99%;
+    margin: auto;
+    height: 33%;
+    margin-top: 40px;
+  }
+
   h2 {
     width: 403px;
     height: 28px;
@@ -252,6 +387,11 @@
     line-height: 28px;
 
     color: #000000;
+
+    @media @tablet {
+      margin-left: 600px;
+      margin-top: -30px;
+    }
   }
 
   .user-review {
@@ -289,6 +429,13 @@
 .plan {
   .displayFlex(space-around, center);
   margin: 30px;
+
+  @media @tablet {
+    max-width: 100%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   h3 {
     width: 150px;
