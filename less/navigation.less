@@ -36,12 +36,13 @@ body {
 
     .input-icon {
       position: absolute;
-      left: 5px;
-      size: 20px;
+      size: 1%;
+      left: 2%;
       top: calc(
         50% - 0.5em
       ); /* Keep icon in center of input, regardless of the input height */
-      margin-left: 80%;
+      margin-left: 100%;
+      margin-right: auto;
 
       @media @tablet {
         margin: auto;
@@ -54,13 +55,14 @@ body {
 
     input {
       font-size: 20px;
-      padding: 8px;
-      padding-left: 20px;
+      padding: 2%;
+      padding-left: 1%;
       border: 1px solid #000000;
       box-sizing: border-box;
       border-radius: 4px;
-      width: 150%;
-      margin-left: 80%;
+      width: 100%;
+      margin-left: 100%;
+      margin-right: auto;
 
       @media @tablet {
         width: 100%;
@@ -104,7 +106,7 @@ body {
     }
 
     .nav-link {
-      width: 40%;
+      width: 20%;
       .displayFlex(space-around, center);
     }
   }
