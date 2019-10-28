@@ -24,6 +24,10 @@ footer {
     /* identical to box height, or 20px */
     letter-spacing: 0.01em;
     color: #000000;
+
+    @media @mobile {
+      font-size: 12px;
+    }
   }
 
   .foot-nav {
@@ -40,6 +44,10 @@ footer {
       /* identical to box height, or 20px */
       letter-spacing: 0.01em;
       color: #000000;
+
+      @media @mobile {
+        display: none;
+      }
     }
   }
 }
