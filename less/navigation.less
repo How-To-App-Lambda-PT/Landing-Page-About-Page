@@ -60,7 +60,7 @@ body {
       border: 1px solid #000000;
       box-sizing: border-box;
       border-radius: 4px;
-      width: 100%;
+      width: 140%;
       margin-left: 100%;
       margin-right: auto;
 
@@ -86,6 +86,7 @@ body {
       @media @tablet {
         display: inline;
         color: #e3c291;
+        margin-left: 50%;
       }
     }
 
@@ -99,15 +100,53 @@ body {
       line-height: 141.2%;
       /* or 20px */
       letter-spacing: 0.01em;
-
-      @media @tablet {
-        display: none;
-      }
     }
 
     .nav-link {
       width: 20%;
       .displayFlex(space-around, center);
+
+      @media @tablet {
+        position: relative;
+        display: inline-block;
+      }
+    }
+
+    .nav-link:hover .dropdown-content {
+      display: none;
+
+      @media @tablet {
+        display: block;
+      }
+    }
+    
+    .nav-link:hover .fa {
+      background-color: @drkgreen;
+    }
+
+    .dropdown-content {
+      .displayFlex(space-around, center);
+      width: 100%;
+
+      @media @tablet {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        a:hover {
+          background-color: #346f2f;
+        }
+      }
     }
   }
 }
