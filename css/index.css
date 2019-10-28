@@ -135,8 +135,10 @@ body {
     max-width: 100%;
   }
 }
-body header {
-  max-width: 100%;
+@media (max-width: 500px) {
+  body {
+    max-width: 100%;
+  }
 }
 body nav {
   display: flex;
@@ -152,6 +154,11 @@ body nav {
   body nav {
     width: 99%;
     margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  body nav {
+    width: 100%;
   }
 }
 body nav h1 {
@@ -278,6 +285,7 @@ body nav .dropdown-content {
   }
   body nav .dropdown-content a:hover {
     background-color: #346f2f;
+    color: white;
   }
 }
 footer {
@@ -310,6 +318,11 @@ footer p {
   letter-spacing: 0.01em;
   color: #000000;
 }
+@media (max-width: 500px) {
+  footer p {
+    font-size: 12px;
+  }
+}
 footer .foot-nav {
   display: flex;
   justify-content: space-around;
@@ -326,6 +339,11 @@ footer .foot-nav a {
   /* identical to box height, or 20px */
   letter-spacing: 0.01em;
   color: #000000;
+}
+@media (max-width: 500px) {
+  footer .foot-nav a {
+    display: none;
+  }
 }
 .top-section {
   display: flex;
@@ -347,6 +365,12 @@ footer .foot-nav a {
     height: 564px;
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+}
+@media (max-width: 500px) {
+  .top-section {
+    width: 100%;
+    height: 355px;
   }
 }
 .top-section .hack {
@@ -390,8 +414,13 @@ footer .foot-nav a {
     /* or 25px */
     text-align: center;
     letter-spacing: 0.01em;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-right: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .top-section .hack p {
+    font-size: 22px;
   }
 }
 .top-section .start {
@@ -414,6 +443,12 @@ footer .foot-nav a {
     width: 180px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 500px) {
+  .top-section .start {
+    height: 37px;
+    margin-top: 10%;
   }
 }
 .top-section .start .get-started {
@@ -472,6 +507,14 @@ footer .foot-nav a {
     background-image: none;
   }
 }
+@media (max-width: 500px) {
+  .top-section .simplify {
+    width: 99%;
+    height: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
 .top-section .simplify p {
   position: static;
   font-family: Roboto;
@@ -494,6 +537,16 @@ footer .foot-nav a {
     margin-left: 500px;
   }
 }
+@media (max-width: 500px) {
+  .top-section .simplify p {
+    position: absolute;
+    font-size: 20px;
+    width: 30%;
+    margin-right: 40%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+}
 .second-section {
   display: flex;
   justify-content: space-around;
@@ -505,6 +558,13 @@ footer .foot-nav a {
     max-width: 90%;
     width: 100%;
     flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .second-section {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
   }
 }
 .second-section .about-how-to {
@@ -519,10 +579,29 @@ footer .foot-nav a {
   line-height: 21px;
   color: #000000;
 }
+@media (max-width: 500px) {
+  .second-section .about-how-to br {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .second-section .about-how-to h2 {
+    font-size: 18px;
+  }
+}
 @media (max-width: 800px) {
   .second-section .about-how-to {
     max-width: 90%;
     margin-bottom: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .second-section .about-how-to {
+    width: 90%;
+  }
+  .second-section .about-how-to p {
+    font-size: 14px;
+    margin-top: 2%;
   }
 }
 .second-section .create {
@@ -535,6 +614,11 @@ footer .foot-nav a {
 @media (max-width: 800px) {
   .second-section .create {
     width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .second-section .create {
+    width: 80%;
   }
 }
 .second-section .create .text {
@@ -567,6 +651,14 @@ footer .foot-nav a {
   text-align: center;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .second-section .create .create-acct {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+  }
+}
 .second-section .create .sign {
   display: flex;
   justify-content: center;
@@ -584,6 +676,11 @@ footer .foot-nav a {
   line-height: 16px;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .second-section .create .sign {
+    height: 50px;
+  }
+}
 .top-how {
   display: flex;
   justify-content: space-evenly;
@@ -598,6 +695,11 @@ footer .foot-nav a {
     max-width: 100%;
     width: 99%;
     margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  .top-how {
+    margin-top: 1%;
   }
 }
 .top-how h2 {
@@ -618,6 +720,12 @@ footer .foot-nav a {
     margin-top: 0.5%;
   }
 }
+@media (max-width: 500px) {
+  .top-how h2 {
+    width: 80%;
+    margin-right: 10%;
+  }
+}
 .top-how .rate-box {
   display: flex;
   justify-content: space-evenly;
@@ -628,6 +736,11 @@ footer .foot-nav a {
   .top-how .rate-box {
     height: 80%;
     margin-bottom: -3%;
+  }
+}
+@media (max-width: 500px) {
+  .top-how .rate-box div:nth-child(3n + 3) {
+    display: none;
   }
 }
 .top-how .rate {
@@ -644,6 +757,11 @@ footer .foot-nav a {
     height: 100%;
     display: flex;
     align-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .top-how .rate {
+    width: 40%;
   }
 }
 .top-how .rate p {
@@ -665,11 +783,21 @@ footer .foot-nav a {
     margin-top: -30px;
   }
 }
+@media (max-width: 500px) {
+  .top-how .rate p {
+    font-size: 16px;
+  }
+}
 .top-how .rate i {
   font-size: 30px;
   color: #f7e32c;
   margin-top: 15px;
   margin-right: 5px;
+}
+@media (max-width: 500px) {
+  .top-how .rate i {
+    font-size: 22px;
+  }
 }
 .bottom {
   display: flex;
@@ -685,6 +813,12 @@ footer .foot-nav a {
     margin: auto;
     height: 33%;
     margin-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom {
+    height: 460px;
+    justify-content: space-between;
   }
 }
 .bottom h2 {
@@ -708,16 +842,39 @@ footer .foot-nav a {
     width: 34%;
   }
 }
+@media (max-width: 500px) {
+  .bottom h2 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: -8%;
+    margin-bottom: -50%;
+  }
+}
 .bottom .user-review {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .bottom .user-review {
+    flex-direction: column;
+  }
+  .bottom .user-review div:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 }
 .bottom .review {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 25%;
+}
+@media (max-width: 500px) {
+  .bottom .review {
+    width: 90% !important;
+  }
 }
 .bottom .review img {
   width: 25%;
@@ -740,6 +897,13 @@ footer .foot-nav a {
   font-size: 14px;
   font-weight: bolder;
 }
+@media (max-width: 500px) {
+  .bottom .review p {
+    font-size: 14px;
+    width: 100%;
+    height: 60px;
+  }
+}
 .plan {
   display: flex;
   justify-content: space-around;
@@ -753,6 +917,13 @@ footer .foot-nav a {
     margin-right: auto;
   }
 }
+@media (max-width: 500px) {
+  .plan {
+    flex-direction: column;
+    height: 510px;
+    width: 100%;
+  }
+}
 .plan h3 {
   width: 50%;
   height: 28.68px;
@@ -764,6 +935,23 @@ footer .foot-nav a {
   /* or 34px */
   letter-spacing: 0.01em;
   color: #000000;
+}
+.plan h2 {
+  display: none;
+}
+@media (max-width: 500px) {
+  .plan h2 {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 141.2%;
+    /* or 25px */
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+  }
 }
 .plan .sign-up {
   width: 50%;
@@ -795,6 +983,11 @@ footer .foot-nav a {
     width: 33%;
   }
 }
+@media (max-width: 500px) {
+  .plan .free {
+    width: 70%;
+  }
+}
 .plan .choose {
   width: 25%;
   height: 110.42px;
@@ -813,6 +1006,11 @@ footer .foot-nav a {
     height: 200px;
   }
 }
+@media (max-width: 500px) {
+  .plan .choose {
+    display: none;
+  }
+}
 .plan .pro {
   display: flex;
   justify-content: space-around;
@@ -828,5 +1026,10 @@ footer .foot-nav a {
 @media (max-width: 800px) {
   .plan .pro {
     width: 33%;
+  }
+}
+@media (max-width: 500px) {
+  .plan .pro {
+    width: 70%;
   }
 }
