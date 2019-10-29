@@ -179,7 +179,6 @@ body nav .input-icon {
   top: calc(50% - 0.5em);
   /* Keep icon in center of input, regardless of the input height */
   margin-left: 100%;
-  margin-right: auto;
 }
 @media (max-width: 800px) {
   body nav .input-icon {
@@ -283,7 +282,10 @@ body nav .dropdown-content {
     text-decoration: none;
     display: block;
   }
+}
+@media (max-width: 800px) and (max-width: 800px) {
   body nav .dropdown-content a:hover {
+    display: inline-block;
     background-color: #346f2f;
     color: white;
   }

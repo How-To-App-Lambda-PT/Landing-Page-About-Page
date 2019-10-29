@@ -47,7 +47,6 @@ body {
         50% - 0.5em
       ); /* Keep icon in center of input, regardless of the input height */
       margin-left: 100%;
-      margin-right: auto;
 
       @media @tablet {
         margin: auto;
@@ -151,8 +150,12 @@ body {
         }
 
         a:hover {
+
+          @media @tablet {
+          display: inline-block;
           background-color: #346f2f;
           color: white;
+          }
         }
       }
     }
